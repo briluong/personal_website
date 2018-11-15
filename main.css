@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+img{
+    border-radius: 50%;
+}
+
+H1{
+    font-size: 3.5em;
+    color: darkgray;
+    font-style: italic;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image:
+            linear-gradient(
+                to bottom right,
+                rgba(255, 0, 0, 0.43), rgba(255, 0, 0, 0)
+            );
+
+    /*font-family: aakar;*/
+    /*font-family: "Abyssinica SIL";<- good for body stuff*/
+    /*font-family: Purisa;*/
+    font-family: Chilanka;
+}
+
+#main-content{
+    /*background-color: rgba(255, 255, 204, 0.2);*/
+    background-color: rgba(230, 230, 230, 0.4);
+    width: 70%;
+    padding: 35px;
+
+
+}
