@@ -1,31 +1,82 @@
 html {
     height: 100%;
+    background-repeat: no-repeat;
+    background-image:
+            linear-gradient(
+                    to bottom right,
+                    rgba(255, 0, 0, 0.43), rgba(255, 0, 0, 0)
+            );
+    background-size: cover;
 }
 
 img{
     border-radius: 50%;
+    border-style: solid;
+    border-color: darksalmon;
+    border-width: 7px;
 }
 
 H1{
     font-size: 3.5em;
     color: darkgray;
     font-style: italic;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    cursor: default;
 }
+
+.topnav input[type=text] {
+    /*float: left;*/
+    padding: 5px;
+    margin-bottom: 8px;
+    font-size: 17px;
+
+}
+
+.topnav .search-container button{
+    /*float: left;*/
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+ul{
+    cursor: pointer;
+    list-style-type: none;
+}
+
+li{
+    padding: 5px;
+    margin: 10px;
+    font-size: 17px;
+
+}
+
+li:hover{
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+}
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+header{
+    margin: 15px;
+    margin-right: 30px;
+}
+
 body {
     height: 100%;
-    background-repeat: no-repeat;
-    background-image:
-            linear-gradient(
-                to bottom right,
-                rgba(255, 0, 0, 0.43), rgba(255, 0, 0, 0)
-            );
 
+    /*position: fixed;*/
     /*font-family: aakar;*/
     /*font-family: "Abyssinica SIL";<- good for body stuff*/
     /*font-family: Purisa;*/
@@ -34,9 +85,46 @@ body {
 
 #main-content{
     /*background-color: rgba(255, 255, 204, 0.2);*/
+
     background-color: rgba(230, 230, 230, 0.4);
     width: 70%;
     padding: 35px;
 
 
+}
+
+@media only screen and (max-width: 950px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    html {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image:
+                linear-gradient(
+                        to bottom right,
+                        rgba(255, 0, 0, 0.43), rgba(255, 0, 0, 0)
+                );
+        background-size: cover;
+    }
+    header{
+        margin-top: 50px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    H1{
+        font-size: 2em;
+        color: darkgray;
+        font-style: italic;
+        text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        cursor: default;
+    }
 }
